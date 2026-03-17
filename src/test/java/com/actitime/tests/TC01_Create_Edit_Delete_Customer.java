@@ -38,4 +38,9 @@ public class TC01_Create_Edit_Delete_Customer extends BaseTest {
 		tasks.editcustomer();
 		tasks.editcustomerValidate();
 	}
+
+	@Test(dependsOnMethods = "editCustomer")
+	public void deleteCustomer() {
+		// TO-DO : Add deletion logic here
+	}
 }
