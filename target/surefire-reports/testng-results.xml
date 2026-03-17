@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Test execution happening in chrome]]>
@@ -56,19 +56,19 @@
       <![CDATA[Successfully edited the customerName..!]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-03-17T19:29:08 IST" name="Suite" finished-at="2026-03-17T19:29:38 IST" duration-ms="30242">
+  <suite started-at="2026-03-17T19:37:34 IST" name="Suite" finished-at="2026-03-17T19:38:09 IST" duration-ms="35049">
     <groups>
     </groups>
-    <test started-at="2026-03-17T19:29:08 IST" name="Test" finished-at="2026-03-17T19:29:38 IST" duration-ms="30242">
+    <test started-at="2026-03-17T19:37:34 IST" name="Test" finished-at="2026-03-17T19:38:09 IST" duration-ms="35049">
       <class name="com.actitime.tests.TC01_Create_Edit_Delete_Customer">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@75329a49]" started-at="2026-03-17T19:29:08 IST" name="setup" finished-at="2026-03-17T19:29:14 IST" duration-ms="6924" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:37:34 IST" name="setup" finished-at="2026-03-17T19:37:41 IST" duration-ms="7019" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test execution happening in chrome]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@75329a49]" started-at="2026-03-17T19:29:14 IST" name="login" finished-at="2026-03-17T19:29:16 IST" duration-ms="1249" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:37:41 IST" name="login" finished-at="2026-03-17T19:37:42 IST" duration-ms="1457" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Element highlighted]]>
@@ -87,7 +87,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@75329a49]" started-at="2026-03-17T19:29:16 IST" name="createCustomer" finished-at="2026-03-17T19:29:33 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.login" duration-ms="17446" status="PASS">
+        <test-method signature="createCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:37:42 IST" name="createCustomer" finished-at="2026-03-17T19:38:04 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.login" duration-ms="21716" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Element highlighted]]>
@@ -112,7 +112,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- createCustomer -->
-        <test-method signature="editCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@75329a49]" started-at="2026-03-17T19:29:33 IST" name="editCustomer" finished-at="2026-03-17T19:29:37 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.createCustomer" duration-ms="4084" status="PASS">
+        <test-method signature="editCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:38:04 IST" name="editCustomer" finished-at="2026-03-17T19:38:08 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.createCustomer" duration-ms="4217" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Element highlighted]]>
@@ -131,7 +131,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- editCustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@75329a49]" started-at="2026-03-17T19:29:37 IST" name="teardown" finished-at="2026-03-17T19:29:38 IST" duration-ms="460" status="PASS">
+        <test-method signature="deleteCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:38:08 IST" name="deleteCustomer" finished-at="2026-03-17T19:38:08 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.editCustomer" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:38:08 IST" name="teardown" finished-at="2026-03-17T19:38:09 IST" duration-ms="544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
