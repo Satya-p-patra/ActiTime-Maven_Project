@@ -64,7 +64,7 @@ public class Tasks extends BasePage {
 	public void clickOnAddButton() {
 		waitForVisibility(addButton);
 		highlightElement(addButton);
-		click(addButton);
+		click(addButton, "Clicked on add button.!");
 	}
 
 	public void clickOnNewCustomerButton() {
@@ -78,10 +78,8 @@ public class Tasks extends BasePage {
 		for (WebElement ele : allcustomerList) {
 			al.add(ele.getText());
 		}
-		if (al.contains("qspiders"))
-			System.out.println("customer is created");
-		else
-			System.out.println("customer is not created");
+		Assert.assertEquals(al.contains("qspiders"), true, "customer is not created.!");
+		Reporter.log("Customer created.!");
 	}
 
 	public void editcustomer() throws InterruptedException, IOException {
@@ -90,7 +88,7 @@ public class Tasks extends BasePage {
 		customersettingButton.click();
 		waitForClickable(customereditField);
 		highlightElement(customereditField);
-		click(customereditField);
+		click(customereditField, "Clicked on customer edit field.!");
 		waitForVisibility(entercustomernameTextbox);
 		clear(entercustomernameTextbox);
 		entercustomernameTextbox.sendKeys(ExcelLibrary.getStringValueFromCell("Customer Page", 1, 1));
@@ -109,11 +107,11 @@ public class Tasks extends BasePage {
 
 	public void deleteCustomer() throws InterruptedException {
 		waitForVisibility(actionsButton);
-		click(actionsButton);
+		click(actionsButton, "Clicked on actions button.!");
 		waitForVisibility(deleteButton);
-		click(deleteButton);
+		click(deleteButton, "Clicked on delete button.!");
 		waitForVisibility(confirmDeleteBtn);
-		click(confirmDeleteBtn);
+		click(confirmDeleteBtn, "Clicked on confirm delete button");
 		Thread.sleep(2000);
 	}
 
@@ -122,9 +120,7 @@ public class Tasks extends BasePage {
 		for (WebElement ele : allcustomerList) {
 			al.add(ele.getText());
 		}
-		if (!al.contains("test_Yantra"))
-			System.out.println("Successfully deleted the customer..!");
-		else
-			System.out.println("Something went wrong while deleting the customer..!");
+		Assert.assertEquals(!al.contains("test_Yantra"), true, "Something went wrong while deleting the customer..!");
+		Reporter.log("Successfully deleted the customer..!", true);
 	}
 }

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +119,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.actitime.tests.TC01_Create_Edit_Delete_Customer" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.actitime.tests.TC01_Create_Edit_Delete_Customer" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -165,6 +170,13 @@
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -224,28 +236,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createCustomer')
 data.setCell(0, 2, 'com.actitime.tests.TC01_Create_Edit_Delete_Customer')
-data.setCell(0, 3, 21716);
+data.setCell(0, 3, 24596);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'editCustomer')
 data.setCell(1, 2, 'com.actitime.tests.TC01_Create_Edit_Delete_Customer')
-data.setCell(1, 3, 4217);
+data.setCell(1, 3, 4805);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login')
+data.setCell(2, 1, 'deleteCustomer')
 data.setCell(2, 2, 'com.actitime.tests.TC01_Create_Edit_Delete_Customer')
-data.setCell(2, 3, 1457);
+data.setCell(2, 3, 3787);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'deleteCustomer')
+data.setCell(3, 1, 'logout')
 data.setCell(3, 2, 'com.actitime.tests.TC01_Create_Edit_Delete_Customer')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 3266);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'login')
+data.setCell(4, 2, 'com.actitime.tests.TC01_Create_Edit_Delete_Customer')
+data.setCell(4, 3, 1151);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -257,13 +273,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">login</span>
+              <span class="reporter-method-name">createCustomer</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Element highlighted</span>
-                <span class="reporter-method-output">value attribute value : patraprakashsatya@gmail.com</span>
+                <span class="reporter-method-output">Clicked on tasklink.!</span>
                 <span class="reporter-method-output">Element highlighted</span>
-                <span class="reporter-method-output">value attribute value : satya123</span>
+                <span class="reporter-method-output">Clicked on add button.!</span>
                 <span class="reporter-method-output">Element highlighted</span>
+                <span class="reporter-method-output">JS click executed on : </span>
+                <span class="reporter-method-output">JS click executed on : Create Customer</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -271,21 +289,38 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Element highlighted</span>
                 <span class="reporter-method-output">Element highlighted</span>
-                <span class="reporter-method-output">Element clicked successfully</span>
+                <span class="reporter-method-output">Clicked on customer edit field.!</span>
                 <span class="reporter-method-output">Text field cleared</span>
                 <span class="reporter-method-output">Successfully edited the customerName..!</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">createCustomer</span>
+              <span class="reporter-method-name">deleteCustomer</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked on actions button.!</span>
+                <span class="reporter-method-output">Clicked on delete button.!</span>
+                <span class="reporter-method-output">Clicked on confirm delete button</span>
+                <span class="reporter-method-output">Successfully deleted the customer..!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">logout</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Element highlighted</span>
-                <span class="reporter-method-output">Element clicked successfully</span>
+                <span class="reporter-method-output">JS click executed on : SP</span>
                 <span class="reporter-method-output">Element highlighted</span>
-                <span class="reporter-method-output">Element clicked successfully</span>
+                <span class="reporter-method-output">Clicked on logout button.!</span>
+                <span class="reporter-method-output">User logged out..!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">login</span>
+              <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Element highlighted</span>
-                <span class="reporter-method-output">JS click executed</span>
-                <span class="reporter-method-output">JS click executed</span>
+                <span class="reporter-method-output">value attribute value : patraprakashsatya@gmail.com</span>
+                <span class="reporter-method-output">Element highlighted</span>
+                <span class="reporter-method-output">value attribute value : satya123</span>
+                <span class="reporter-method-output">Element highlighted</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -310,23 +345,27 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">7062 ms</span>
+                <span class="method-start">11780 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createCustomer</span>
-                <span class="method-start">8530 ms</span>
+                <span class="method-start">12945 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editCustomer</span>
-                <span class="method-start">30250 ms</span>
+                <span class="method-start">37545 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteCustomer</span>
-                <span class="method-start">34470 ms</span>
+                <span class="method-start">42355 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">46145 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">34473 ms</span>
+                <span class="method-start">49413 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

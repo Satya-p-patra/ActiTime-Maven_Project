@@ -23,12 +23,12 @@ public class Home extends BasePage {
 	public void clickOnTask() {
 		waitForVisibility(tasksLink);
 		highlightElement(tasksLink);
-		click(tasksLink);
+		click(tasksLink, "Clicked on tasklink.!");
 	}
 
 	public void clickOnListManagement() {
 		waitForVisibility(listmanagementLink);
 		highlightElement(listmanagementLink);
-		click(listmanagementLink);
+		click(listmanagementLink, "Clicked on list management link.!");
 	}
 }

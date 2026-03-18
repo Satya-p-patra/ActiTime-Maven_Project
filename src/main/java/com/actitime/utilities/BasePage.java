@@ -131,10 +131,10 @@ public class BasePage extends ExcelLibrary {
 
 	// ================= WEBELEMENT METHODS =================
 
-	public void click(WebElement element) {
+	public void click(WebElement element, String successMessage) {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
-		Reporter.log("Element clicked successfully", true);
+		Reporter.log(successMessage, true);
 	}
 
 	public void sendKeys(WebElement element, String text) {
@@ -466,7 +466,7 @@ public class BasePage extends ExcelLibrary {
 	public void jsClick(WebElement element) {
 		wait.until(ExpectedConditions.visibilityOf(element));
 		js.executeScript("arguments[0].click();", element);
-		Reporter.log("JS click executed", true);
+		Reporter.log("JS click executed on : " + element.getText(), true);
 	}
 
 	public void jsSendKeys(WebElement element, String text) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Test execution happening in chrome]]>
@@ -23,31 +23,31 @@
       <![CDATA[Element highlighted]]>
     </line>
     <line>
-      <![CDATA[Element clicked successfully]]>
+      <![CDATA[Clicked on tasklink.!]]>
     </line>
     <line>
       <![CDATA[Element highlighted]]>
     </line>
     <line>
-      <![CDATA[Element clicked successfully]]>
+      <![CDATA[Clicked on add button.!]]>
     </line>
     <line>
       <![CDATA[Element highlighted]]>
     </line>
     <line>
-      <![CDATA[JS click executed]]>
+      <![CDATA[JS click executed on : ]]>
     </line>
     <line>
-      <![CDATA[JS click executed]]>
-    </line>
-    <line>
-      <![CDATA[Element highlighted]]>
+      <![CDATA[JS click executed on : Create Customer]]>
     </line>
     <line>
       <![CDATA[Element highlighted]]>
     </line>
     <line>
-      <![CDATA[Element clicked successfully]]>
+      <![CDATA[Element highlighted]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on customer edit field.!]]>
     </line>
     <line>
       <![CDATA[Text field cleared]]>
@@ -55,20 +55,47 @@
     <line>
       <![CDATA[Successfully edited the customerName..!]]>
     </line>
+    <line>
+      <![CDATA[Clicked on actions button.!]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on delete button.!]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on confirm delete button]]>
+    </line>
+    <line>
+      <![CDATA[Successfully deleted the customer..!]]>
+    </line>
+    <line>
+      <![CDATA[Element highlighted]]>
+    </line>
+    <line>
+      <![CDATA[JS click executed on : SP]]>
+    </line>
+    <line>
+      <![CDATA[Element highlighted]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on logout button.!]]>
+    </line>
+    <line>
+      <![CDATA[User logged out..!]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-03-17T19:37:34 IST" name="Suite" finished-at="2026-03-17T19:38:09 IST" duration-ms="35049">
+  <suite started-at="2026-03-18T10:02:42 IST" name="Suite" finished-at="2026-03-18T10:03:32 IST" duration-ms="49858">
     <groups>
     </groups>
-    <test started-at="2026-03-17T19:37:34 IST" name="Test" finished-at="2026-03-17T19:38:09 IST" duration-ms="35049">
+    <test started-at="2026-03-18T10:02:42 IST" name="Test" finished-at="2026-03-18T10:03:32 IST" duration-ms="49858">
       <class name="com.actitime.tests.TC01_Create_Edit_Delete_Customer">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:37:34 IST" name="setup" finished-at="2026-03-17T19:37:41 IST" duration-ms="7019" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@4313f5bc]" started-at="2026-03-18T10:02:42 IST" name="setup" finished-at="2026-03-18T10:02:54 IST" duration-ms="11754" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test execution happening in chrome]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:37:41 IST" name="login" finished-at="2026-03-17T19:37:42 IST" duration-ms="1457" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@4313f5bc]" started-at="2026-03-18T10:02:54 IST" name="login" finished-at="2026-03-18T10:02:55 IST" duration-ms="1151" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Element highlighted]]>
@@ -87,32 +114,32 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:37:42 IST" name="createCustomer" finished-at="2026-03-17T19:38:04 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.login" duration-ms="21716" status="PASS">
+        <test-method signature="createCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@4313f5bc]" started-at="2026-03-18T10:02:55 IST" name="createCustomer" finished-at="2026-03-18T10:03:19 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.login" duration-ms="24596" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Element highlighted]]>
             </line>
             <line>
-              <![CDATA[Element clicked successfully]]>
+              <![CDATA[Clicked on tasklink.!]]>
             </line>
             <line>
               <![CDATA[Element highlighted]]>
             </line>
             <line>
-              <![CDATA[Element clicked successfully]]>
+              <![CDATA[Clicked on add button.!]]>
             </line>
             <line>
               <![CDATA[Element highlighted]]>
             </line>
             <line>
-              <![CDATA[JS click executed]]>
+              <![CDATA[JS click executed on : ]]>
             </line>
             <line>
-              <![CDATA[JS click executed]]>
+              <![CDATA[JS click executed on : Create Customer]]>
             </line>
           </reporter-output>
         </test-method> <!-- createCustomer -->
-        <test-method signature="editCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:38:04 IST" name="editCustomer" finished-at="2026-03-17T19:38:08 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.createCustomer" duration-ms="4217" status="PASS">
+        <test-method signature="editCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@4313f5bc]" started-at="2026-03-18T10:03:19 IST" name="editCustomer" finished-at="2026-03-18T10:03:24 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.createCustomer" duration-ms="4805" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Element highlighted]]>
@@ -121,7 +148,7 @@
               <![CDATA[Element highlighted]]>
             </line>
             <line>
-              <![CDATA[Element clicked successfully]]>
+              <![CDATA[Clicked on customer edit field.!]]>
             </line>
             <line>
               <![CDATA[Text field cleared]]>
@@ -131,11 +158,42 @@
             </line>
           </reporter-output>
         </test-method> <!-- editCustomer -->
-        <test-method signature="deleteCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:38:08 IST" name="deleteCustomer" finished-at="2026-03-17T19:38:08 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.editCustomer" duration-ms="0" status="PASS">
+        <test-method signature="deleteCustomer()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@4313f5bc]" started-at="2026-03-18T10:03:24 IST" name="deleteCustomer" finished-at="2026-03-18T10:03:28 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.editCustomer" duration-ms="3787" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Clicked on actions button.!]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on delete button.!]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on confirm delete button]]>
+            </line>
+            <line>
+              <![CDATA[Successfully deleted the customer..!]]>
+            </line>
           </reporter-output>
         </test-method> <!-- deleteCustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@161479c6]" started-at="2026-03-17T19:38:08 IST" name="teardown" finished-at="2026-03-17T19:38:09 IST" duration-ms="544" status="PASS">
+        <test-method signature="logout()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@4313f5bc]" started-at="2026-03-18T10:03:28 IST" name="logout" finished-at="2026-03-18T10:03:31 IST" depends-on-methods="com.actitime.tests.TC01_Create_Edit_Delete_Customer.deleteCustomer, com.actitime.tests.TC01_Create_Edit_Delete_Customer.login" duration-ms="3266" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Element highlighted]]>
+            </line>
+            <line>
+              <![CDATA[JS click executed on : SP]]>
+            </line>
+            <line>
+              <![CDATA[Element highlighted]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on logout button.!]]>
+            </line>
+            <line>
+              <![CDATA[User logged out..!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.actitime.tests.TC01_Create_Edit_Delete_Customer@4313f5bc]" started-at="2026-03-18T10:03:31 IST" name="teardown" finished-at="2026-03-18T10:03:32 IST" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

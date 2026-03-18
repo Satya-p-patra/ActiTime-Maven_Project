@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.actitime.pages.Home;
 import com.actitime.pages.Login;
 import com.actitime.pages.NewCustomer;
+import com.actitime.pages.Profile;
 import com.actitime.pages.Tasks;
 import com.actitime.utilities.BaseTest;
 
@@ -29,7 +30,6 @@ public class TC01_Create_Edit_Delete_Customer extends BaseTest {
 
 		NewCustomer ns = new NewCustomer(driver);
 		ns.createCustomer();
-
 	}
 
 	@Test(dependsOnMethods = "createCustomer")
@@ -40,7 +40,16 @@ public class TC01_Create_Edit_Delete_Customer extends BaseTest {
 	}
 
 	@Test(dependsOnMethods = "editCustomer")
-	public void deleteCustomer() {
-		// TO-DO : Add deletion logic here
+	public void deleteCustomer() throws InterruptedException {
+		tasks = new Tasks(driver);
+		tasks.deleteCustomer();
+		tasks.deletecustomerValidate();
+	}
+
+	@Test(dependsOnMethods = { "login", "deleteCustomer" })
+	public void logout() {
+		Profile p = new Profile(driver);
+		p.logout();
+		p.validateLogout();
 	}
 }
